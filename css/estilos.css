@@ -1,9 +1,9 @@
 :root {
   /* Primary */
-  --Light-red: hsl(0, 100%, 67%);
-  --Orangey-yellow: hsl(39, 100%, 56%);
-  --Green-teal: hsl(166, 100%, 37%);
-  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-red: hsl(0, 100%, 67%, 20%);
+  --Orangey-yellow: hsl(39, 100%, 56%, 20%);
+  --Green-teal: hsl(166, 100%, 37%, 20%);
+  --Cobalt-blue: hsl(234, 85%, 45%, 20%);
 
   /* Gradients */
   --Light-slate-blue-background: hsl(252, 100%, 67%);
@@ -29,7 +29,7 @@ body {
 .card__container {
   width: 100%;
   max-width: 375px;
-  height: 600px;
+
   background-color: var(--White);
 }
 .top__section {
@@ -72,10 +72,81 @@ p {
   text-align: center;
   margin-bottom: 0;
 }
+.title__description h1 {
+  font-size: 1.6rem;
+  color: var(--White);
+}
 .title__description p {
   color: rgba(255, 255, 255, 0.51);
   text-indent: 0.3em;
   margin: 0 50px;
   margin-bottom: 2.8em;
   margin-top: 0.8em;
+}
+.bottom__section h3 {
+  margin-left: 2em;
+}
+
+.statistic {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 315px;
+  display: flex;
+  height: 3.5em;
+  margin-bottom: 1em;
+  border-radius: 0.56em;
+  justify-content: space-between;
+}
+.icon {
+  display: flex;
+}
+.icon img {
+  width: 1.2em;
+  margin-left: 0.8em;
+}
+.icon p {
+  margin: 1.2em 0 1.2em 0.5em;
+  text-transform: capitalize;
+}
+.result p {
+  color: black;
+  margin: 1.2em 1em 1.2em 0;
+}
+
+.statistic---red {
+  color: hsl(0, 100%, 67%);
+  background-color: var(--Light-red);
+}
+.statistic---orange {
+  color: hsl(39, 100%, 56%);
+  background-color: var(--Orangey-yellow);
+}
+.statistic---green {
+  color: hsl(166, 100%, 37%);
+  background-color: var(--Green-teal);
+}
+.statistic---blue {
+  background-color: var(--Cobalt-blue);
+  color: hsl(234, 85%, 45%);
+}
+.bottom {
+  overflow: hidden;
+  margin-top: 1em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.bottom a {
+  padding: 0.9em 0;
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--White);
+  margin: 0 auto;
+  display: block;
+  background-color: red;
+  max-width: 315px;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 1.7em;
 }
