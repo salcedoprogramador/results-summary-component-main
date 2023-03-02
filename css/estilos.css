@@ -19,7 +19,7 @@
 }
 
 body {
-  background-color: cornflowerblue;
+  background-color: var(--Pale-blue);
   font-family: "Hanken Grotesk", sans-serif;
   width: 100vw;
   height: 100vh;
@@ -29,7 +29,6 @@ body {
 .card__container {
   width: 100%;
   max-width: 375px;
-
   background-color: var(--White);
 }
 .top__section {
@@ -149,4 +148,37 @@ p {
   width: 100%;
   text-decoration: none;
   border-radius: 1.7em;
+}
+/* responsive */
+@media (min-width: 600px) {
+  .card__container {
+    max-width: 636px;
+    display: flex;
+    border-radius: 1.88em;
+    box-shadow: 2px 5px 8px 1px var(--Light-lavender);
+  }
+  .top__section {
+    max-width: 367px;
+    border-radius: 1.88em;
+  }
+  .circle {
+    width: 12.5em;
+    height: 12.5em;
+  }
+  .bottom__section {
+    width: 467px;
+    padding: 0 1.5em;
+  }
+  .title__description h1 {
+    margin-top: 1em;
+  }
+  .bottom__section h3 {
+    margin-left: 0;
+  }
+}
+
+@media (hover: hover) {
+  .bottom a:hover {
+    background: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+  }
 }
